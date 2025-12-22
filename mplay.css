@@ -1,0 +1,542 @@
+body {
+  margin: 50px auto;
+  height: 100%; /* высота 100% от родительского элемента */
+  flex-direction: column; /* все контейнеры идут вертикально */
+  color: aliceblue;
+  background-color: burlywood;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+.section_1 {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  background-image: url("image/back_session1.jpg");
+}
+.section_2 {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  background-color: #d53005;
+}
+.section_3 {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #d53005 0%, #000000 6.04%);
+}
+.section_4 {
+  position: relative;
+  overflow: hidden; /* Скрывает выходящие за границы блока элементы*/
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  background-color: #d53005;
+}
+
+.logo {
+  font-family: "Libre Barcode 128 Text", system-ui;
+  position: absolute;
+  left: 150px;
+
+  font-size: 80px;
+  line-height: 40px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap; /* переместить элементы  на другую строку если не помещаются*/
+  justify-content: center;
+}
+.nav_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin: 75px 0;
+  margin-bottom: 30px;
+  margin-right: 350px;
+}
+.menu {
+  font-family: "Istok Web";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1em;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main_info {
+  width: 412px;
+  height: 264px;
+  /* left: 115px;
+top: 291px; */
+}
+
+.mp {
+  font-family: "Kenia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 150px;
+  color: #ffffff;
+}
+
+.phone {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 550px;
+  left: 180px;
+  transform: rotate(90deg); /* Поворот на 45 градусов */
+  opacity: 0.3;
+  /* filter: opacity(10%); Альтернатива opacity */
+}
+.cable {
+  position: relative;
+  display: flex;
+  width: 350;
+  height: 350;
+  opacity: 1;
+  margin-top: -130px;
+  margin-left: 50px;
+  /* top: 800px;
+left: 900px; */
+  mix-blend-mode: Screen;
+}
+.American {
+  font-family: Istok Web;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5em;
+  width: 290px;
+  padding: 20px;
+}
+.deck_2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.music {
+  font-family: Karla;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1em;
+  margin-left: 120px;
+  margin-top: 80px;
+}
+.listen {
+  position: relative;
+  top: 200px;
+  left: 120px;
+  font-family: Karla;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: 380px;
+  height: 82px;
+  color: white;
+  background: radial-gradient(
+    98.43% 2084.95% at 1.57% 7.83%,
+    #b13e18 0%,
+    #f3501a 100%
+  );
+  /* mix-blend-mode: normal; */
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5),
+    -4px -4px 30px rgba(255, 255, 255, 0.1);
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+/* MusicPlayer gives you instant access to millions of songs – from old favorites to the latest hits. Just hit play to stream anything you like. */
+.page_about {
+  position: absolute;
+  width: 970px;
+  height: 70px;
+  left: 275px;
+  top: 475px;
+
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #ffffff;
+}
+.Download {
+  padding: 0;
+}
+
+.Download1 {
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 1em;
+  margin-left: 120px;
+  margin-top: 80px;
+  width: 240px;
+  height: 60px;
+  border: transparent;
+  border-radius: 30px;
+  background-color: #000000;
+  text-align: center;
+  padding: 0 40px;
+}
+.Download1 a {
+  color: white;
+}
+.Download2 {
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 1em;
+  margin-left: 120px;
+  margin-top: 30px;
+  width: 240px;
+  height: 60px;
+  border: transparent;
+  border-radius: 30px;
+  background-color: white;
+  text-align: center;
+  padding: 0 40px;
+  margin-bottom: 100px;
+}
+.Download2 a {
+  color: black;
+}
+.versia {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 21px;
+  line-height: 100%;
+  color: #ffffff;
+  padding-left: 20px;
+  width: 430px;
+  text-align: center;
+}
+.previos {
+  width: 430px;
+  padding-left: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+.mp_player {
+  position: absolute;
+  left: 340px;
+  top: 170px;
+  width: 1170px;
+  height: 670px;
+  /* border: 2px solid white; */
+}
+.border_screen {
+  box-sizing: border-box;
+  margin-left: 110px;
+  width: 945px;
+  height: 640px;
+  background-color: #000000;
+  border: 2px solid rgba(74, 85, 104, 1);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.player_screen {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 25px;
+  width: 890px;
+  height: 590px;
+  background: linear-gradient(270deg, #484d54 0%, #343b43 100%);
+}
+.screen_stand {
+  margin-top: -5px;
+  width: 1170px;
+  height: 35px;
+}
+.up_screen_stand {
+  display: flex;
+  justify-content: center;
+  width: 1170px;
+  height: 20px;
+  left: 336px;
+  /* top: 806.48px; */
+  background: linear-gradient(
+      90deg,
+      #0d1012 0%,
+      #cad4db 3%,
+      #242729 7%,
+      #a3acb1 14%,
+      #a3acb1 86%,
+      #242729 93%,
+      #cad4db 97%,
+      #0d1012 100%
+    ),
+    #a3acb1;
+  border-radius: 3px 0px 0px;
+}
+.blank_on_screen_stand {
+  width: 193px;
+  height: 16px;
+  /* align-items: center; */
+  background: linear-gradient(
+    90deg,
+    #455864 0%,
+    #9baab3 25%,
+    #9baab3 75%,
+    #455864 100%
+  );
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.bottom_stand {
+  /* Bottom Curve */
+  width: 1170px;
+  height: 14px;
+  background: linear-gradient(180deg, #7a7f83 0%, #0b0b0e 100%), #647279;
+  border-bottom-left-radius: 16em 180%;
+  border-bottom-right-radius: 50%;
+  /* Bottom Curve */
+}
+.mac {
+  text-align: center;
+  margin-top: 0px;
+  color: rgb(200, 230, 243);
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.nav_player {
+  width: 120px;
+  height: 590px;
+  border-right: 2px solid hsla(0, 0%, 0%, 0.308);
+  text-align: center;
+}
+.MP {
+  height: 70px;
+  padding: 0px 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5em;
+  border-bottom: 2px solid hsla(0, 0%, 0%, 0.308);
+  color: rgba(193, 196, 203, 1);
+}
+.find {
+  margin: 0px 10px 30px 10px;
+  padding: 4px 5px;
+  background-color: #4e5a5f;
+  border-radius: 10px;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 9px;
+  box-shadow: 4px 2px 4px #20252780, 4px -2px 6px #525f647e;
+}
+.find a {
+  color: rgb(0, 0, 0);
+}
+
+.for_you,
+.songs,
+.actor,
+.album,
+.store {
+  padding: 4px 5px;
+  margin: 0px 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 9px;
+  box-shadow: 4px 2px 6px #20252780, 4px -2px 6px #525f647e;
+}
+.for_you {
+  background: rgba(255, 0, 0, 0.2);
+}
+.songs {
+  background: rgba(5, 255, 0, 0.2);
+}
+.actor {
+  background: rgba(5, 0, 255, 0.2);
+}
+.album {
+  background: rgba(255, 230, 0, 0.2);
+  margin-bottom: 40px;
+}
+.store {
+  background: rgba(255, 0, 199, 0.3);
+}
+.for_you a,
+.songs a,
+.actor a,
+.album a,
+.store a {
+  color: rgba(255, 255, 255, 1);
+}
+.main_screen {
+  display: flex;
+}
+  
+.img_nav {
+  width: 50px; /* Задайте желаемую ширину */
+  height: 50px; /* Высота равна ширине для круга */
+  border-radius: 50%; /* Делает div круглым */
+  background-image: url("image/img_nav.png"); /* Ваша картинка */
+  background-size: cover; /* Масштабирует картинку, чтобы она покрыла контейнер */
+  background-position: center; /* Центрирует картинку внутри круга */
+  overflow: hidden; /* Обрезает всё, что выходит за пределы круга */
+  margin: 10px 30px;
+  border: 5px solid #50545e;
+  box-shadow: -4px -4px 15px rgba(228, 198, 198, 0.1),
+    4px 4px 15px rgba(228, 198, 198, 0.1);
+}
+.panel {
+  height: 80px;
+  width: 145px;
+  font-family: Montserrat;
+  font-weight: 400;
+  border-bottom: 2px solid hsla(0, 0%, 0%, 0.308);
+}
+
+.line_control {
+  display: flex;
+}
+.you_m {
+  text-align: left;
+  font-size: 10px;
+  margin-left: 160px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.art {
+  color: rgba(231, 231, 231, 0.7);
+}
+._ {
+  margin: 0 20px;
+  color: rgba(231, 231, 231, 0.7);
+}
+.left {
+  width: 220px;
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #d42f04 28.48%, #f3511c 98.17%);
+  box-shadow: 2px 2px 6px rgba(177, 177, 177, 0.534),
+    -2px -2px 6px rgba(0, 0, 0, 0.459);
+}
+.right {
+  width: 370px;
+  padding-right: 10px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 6px rgba(177, 177, 177, 0.534),
+    -2px -2px 6px rgba(0, 0, 0, 0.459);
+}
+.circle_black {
+  position: relative;
+  bottom: 7px;
+  right: 382px;
+  width: 25px;
+  height: 25px;
+  background-color: #413838;
+  border-radius: 50%;
+  box-shadow: -2px -2px 6px rgba(153, 152, 152, 0.514),
+    2px 2px 6px rgba(0, 0, 0, 0.137);
+}
+.circle_yellow {
+  position: relative;
+  bottom: 0px;
+  right: 400px;
+  width: 12px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+}
+.control_up {
+  height: 80px;
+  border-bottom: 2px solid hsla(0, 0%, 0%, 0.308);
+}
+.bar {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  height: 60px;
+  
+}
+.top10 a, .find1 a {
+  color:white;
+}
+.top10, .find1 {
+  font: 600 9px  Montserrat;
+  text-align: center;
+  width: 70px;
+  height: 18px;
+  padding-top: 5px;
+  margin-top: 20px;
+  background: #0E00B080;
+}
+.find1 {
+  background: #02FF4980;
+}
+.img_player {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 750px;
+  margin-top: 20px;
+  gap: 30px 40px;
+  padding-bottom: 40px;
+}
+img~ p {
+  font:400 9px Montserrat;
+  color: rgb(176, 232, 11);
+  margin-bottom: -5px;
+}
+img~ p~ p {
+  font:400 7px Montserrat;
+  color: white; 
+}
+hr {
+  width: 770px;
+  border: none;
+  height: 2px;
+  background-color: hsla(0, 0%, 0%, 0.308);
+  margin-left: 0;
+}
+.control {
+  display: flex;
+}
+.menu_down {
+  margin-left: 40px;
+  padding-bottom: -20px;
+}
+.menu_down img {
+  padding-right: 15px;
+  margin-bottom: -15px;
+}
+
