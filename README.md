@@ -1,5 +1,4 @@
 # Project-Media-Player
- Сверстать макета медиа плейера на HTML+CSS 
  Первая попытка самостоятельно 
  сверстать страничку по шаблону
  https://www.figma.com/design/xwvUXpkFR8vSdAN27iafbM/
