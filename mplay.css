@@ -13,83 +13,83 @@ a {
   text-decoration: none;
   color: white;
 }
-
+/* Вся стрвница */
 main {
   display: flex;
   margin: 0;
   padding: 0;
   flex-direction: column;
 }
-
-.section_1 {
+/* Экраны */
+.section_1, .section_2, .section_3,.section_4,.section_5 {
   position: relative;
   width: 1440px;
   height: 1024px;
   margin: 0 auto;
+
+}
+/* Задний фон экранов */
+.section_1 {
   background-image: url("image/back_session1.jpg");
 }
 .section_2 {
-  position: relative;
-  width: 1440px;
-  height: 1024px;
-  margin: 0 auto;
   background-color: #d53005;
 }
 .section_3 {
-  position: relative;
-  width: 1440px;
-  height: 1024px;
-  margin: 0 auto;
   background: linear-gradient(180deg, #d53005 0%, #000000 6.04%);
 }
 .section_4 {
-  position: relative;
   overflow: hidden; /* Скрывает выходящие за границы блока элементы*/
-  width: 1440px;
-  height: 1024px;
-  margin: 0 auto;
   background-color: #d53005;
 }
-
+.section_5 {
+  color: rgba(255, 255, 255, 0.753);
+  height: 536px;
+  background: linear-gradient(180deg, #d53005 0%, #000000 4.01%);
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+}
+/* ------------------------------------------------------------ */
+/* Логотип МР */
 .logo {
   font-family: "Libre Barcode 128 Text", system-ui;
   position: absolute;
   left: 150px;
-
   font-size: 80px;
   line-height: 40px;
 }
-
+/* Строка навигации по сайту */
+/* контейнер */
 .nav {
   display: flex;
-  flex-wrap: wrap; /* переместить элементы  на другую строку если не помещаются*/
   justify-content: center;
 }
 .nav_list {
   display: flex;
-  flex-wrap: wrap;
+  /* Позиционирование навигационного списка */
   gap: 100px;
   margin: 75px 0;
   margin-bottom: 30px;
   margin-right: 350px;
 }
+/* Пункты меню */
 .menu {
   font-family: "Istok Web";
   font-weight: 400;
   font-size: 18px;
   line-height: 1em;
 }
+/* Включает название, производителя изображения плейера,наушников, кабеля */
 .info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
+/* Блок надписей */
 .main_info {
   width: 412px;
   height: 264px;
-  /* left: 115px;
-top: 291px; */
 }
 
 .mp {
@@ -100,27 +100,6 @@ top: 291px; */
   line-height: 150px;
   color: #ffffff;
 }
-
-.phone {
-  position: absolute; /* Абсолютное позиционирование */
-  top: 550px;
-  left: 180px;
-  transform: rotate(90deg); /* Поворот на 45 градусов */
-  opacity: 0.3;
-  /* filter: opacity(10%); Альтернатива opacity */
-}
-.cable {
-  position: relative;
-  display: flex;
-  width: 350;
-  height: 350;
-  opacity: 1;
-  margin-top: -130px;
-  margin-left: 50px;
-  /* top: 800px;
-left: 900px; */
-  mix-blend-mode: Screen;
-}
 .American {
   font-family: Istok Web;
   font-weight: 400;
@@ -129,11 +108,28 @@ left: 900px; */
   width: 290px;
   padding: 20px;
 }
-.deck_2 {
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
+/* ----------------------------------------- */
+/* Описание кабеля и наушников */
+.phone {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 550px;
+  left: 180px;
+  transform: rotate(90deg); /* Поворот на 45 градусов */
+  opacity: 0.3;
+  /* filter: opacity(30%); Альтернатива opacity */
 }
+.cable {
+  position: relative;
+  display: flex;
+  /* Непрозрачность кабеля от 0 до 1 */
+  opacity: 0.7;
+  margin-top: -130px;
+  margin-left: 50px;
+  /* смешивания содержимого элемента с его фоном */
+  mix-blend-mode: Screen; 
+}
+/* ----------- Второй экран ---------------- */
+/* MUSIC */
 .music {
   font-family: Karla;
   font-weight: 400;
@@ -142,6 +138,19 @@ left: 900px; */
   margin-left: 120px;
   margin-top: 80px;
 }
+/* Блок кнопок управления и картинки с диском */
+.deck_2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+/* Контейнер кнопок */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+/* Формирование кнопок */
 .listen {
   position: relative;
   top: 200px;
@@ -149,81 +158,63 @@ left: 900px; */
   font-family: Karla;
   font-weight: 400;
   font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0%;
   width: 380px;
   height: 82px;
-  color: white;
   background: radial-gradient(
     98.43% 2084.95% at 1.57% 7.83%,
     #b13e18 0%,
     #f3501a 100%
   );
-  /* mix-blend-mode: normal; */
+  mix-blend-mode: normal;
   border: 1px solid rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5),
     -4px -4px 30px rgba(255, 255, 255, 0.1);
 }
-.buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-/* MusicPlayer gives you instant access to millions of songs – from old favorites to the latest hits. Just hit play to stream anything you like. */
+
+/* ----- секция 3 -------*/
+/* Сообщение на 3 секции */
 .page_about {
   position: absolute;
   width: 970px;
   height: 70px;
   left: 275px;
   top: 475px;
-
   font-family: "Karla";
-  font-style: normal;
   font-weight: 400;
   font-size: 30px;
-  line-height: 35px;
-
-  color: #ffffff;
 }
+/* ----------Секция 4 ---------------- */
+/* Контейнер загрузочных кнопок */
 .Download {
   padding: 0;
 }
-
-.Download1 {
+/* Формирование кнопок */
+.Download1, .Download2 {
   font-family: Montserrat;
   font-size: 20px;
-  line-height: 1em;
   margin-left: 120px;
-  margin-top: 80px;
   width: 240px;
   height: 60px;
   border: transparent;
   border-radius: 30px;
-  background-color: #000000;
   text-align: center;
   padding: 0 40px;
 }
-.Download1 a {
-  color: white;
+.Download1 {
+  margin-top: 80px;
+  background-color: #000000;
 }
 .Download2 {
-  font-family: Montserrat;
-  font-size: 20px;
-  line-height: 1em;
-  margin-left: 120px;
   margin-top: 30px;
-  width: 240px;
-  height: 60px;
-  border: transparent;
-  border-radius: 30px;
   background-color: white;
-  text-align: center;
-  padding: 0 40px;
   margin-bottom: 100px;
 }
+
 .Download2 a {
   color: black;
 }
+
+/* Нужна ли предыдущая... */
 .versia {
   font-family: Montserrat;
   font-weight: 600;
@@ -235,6 +226,7 @@ left: 900px; */
   width: 430px;
   text-align: center;
 }
+/* Контейнер сообщений о предыдущих версиях */
 .previos {
   width: 430px;
   padding-left: 20px;
@@ -243,14 +235,22 @@ left: 900px; */
   font-family: Montserrat;
   font-weight: 400;
 }
+/* Ссылка на выбор предыдущих версий */
+.previos_choice {
+  color: initial;
+  text-decoration: underline;
+}
+/* ================================ */
+/* Контейнер для размещения ноутбука */
 .mp_player {
   position: absolute;
   left: 340px;
   top: 170px;
   width: 1170px;
   height: 670px;
-  /* border: 2px solid white; */
+ 
 }
+/* Внешняя граница ноутбука */
 .border_screen {
   box-sizing: border-box;
   margin-left: 110px;
@@ -261,6 +261,8 @@ left: 900px; */
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
+/* =============================================== */
+/* Экран ноутбука внутри черной рамки контейнер для содержимого*/
 .player_screen {
   display: flex;
   margin-left: 25px;
@@ -269,18 +271,20 @@ left: 900px; */
   height: 590px;
   background: linear-gradient(270deg, #484d54 0%, #343b43 100%);
 }
+/* =================================== */
+/* Контейнер подставки ноутбука */
 .screen_stand {
   margin-top: -5px;
   width: 1170px;
   height: 35px;
 }
+/* Верхняя часть нижней крышки мак бука */
 .up_screen_stand {
   display: flex;
   justify-content: center;
   width: 1170px;
   height: 20px;
   left: 336px;
-  /* top: 806.48px; */
   background: linear-gradient(
       90deg,
       #0d1012 0%,
@@ -295,10 +299,10 @@ left: 900px; */
     #a3acb1;
   border-radius: 3px 0px 0px;
 }
+/* Вставка по центру в верхней части нижней крышки макбука */
 .blank_on_screen_stand {
   width: 193px;
   height: 16px;
-  /* align-items: center; */
   background: linear-gradient(
     90deg,
     #455864 0%,
@@ -309,15 +313,16 @@ left: 900px; */
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
+/* Самый низ макбука */
 .bottom_stand {
-  /* Bottom Curve */
   width: 1170px;
   height: 14px;
   background: linear-gradient(180deg, #7a7f83 0%, #0b0b0e 100%), #647279;
   border-bottom-left-radius: 16em 180%;
   border-bottom-right-radius: 50%;
-  /* Bottom Curve */
+ 
 }
+/* надпись на рамке экрана Macbook Pro */
 .mac {
   text-align: center;
   margin-top: 0px;
@@ -326,7 +331,8 @@ left: 900px; */
   font-weight: normal;
   font-size: 13px;
 }
-
+/* ======================================= */
+/* Левая навигационная панель на экране */
 .nav_player {
   width: 120px;
   height: 590px;
@@ -397,10 +403,20 @@ left: 900px; */
 .store a {
   color: rgba(255, 255, 255, 1);
 }
+/*========================================= */
+/* Контейнер для правой верхней части экрана 1/3  */
 .main_screen {
   display: flex;
 }
-  
+/* контейнер для круглой картинки */
+.panel {
+  height: 80px;
+  width: 145px;
+  font-family: Montserrat;
+  font-weight: 400;
+  border-bottom: 2px solid hsla(0, 0%, 0%, 0.308);
+}
+
 .img_nav {
   width: 50px; /* Задайте желаемую ширину */
   height: 50px; /* Высота равна ширине для круга */
@@ -414,17 +430,14 @@ left: 900px; */
   box-shadow: -4px -4px 15px rgba(228, 198, 198, 0.1),
     4px 4px 15px rgba(228, 198, 198, 0.1);
 }
-.panel {
+/* ====================================== */
+/* Надписи и ползунок к/ч, контейнер */
+.control_up {
   height: 80px;
-  width: 145px;
-  font-family: Montserrat;
-  font-weight: 400;
   border-bottom: 2px solid hsla(0, 0%, 0%, 0.308);
 }
-
-.line_control {
-  display: flex;
-}
+/* ------------------------ */
+/* Самая верхняя надпись */
 .you_m {
   text-align: left;
   font-size: 10px;
@@ -439,6 +452,12 @@ left: 900px; */
   margin: 0 20px;
   color: rgba(231, 231, 231, 0.7);
 }
+/* ---------------------------------------- */
+/* Контейнер для красно-черного ползунка с черно желтым маркером */
+.line_control {
+  display: flex;
+}
+
 .left {
   width: 220px;
   height: 8px;
@@ -476,33 +495,36 @@ left: 900px; */
   background-color: orange;
   border-radius: 50%;
 }
-.control_up {
-  height: 80px;
-  border-bottom: 2px solid hsla(0, 0%, 0%, 0.308);
-}
+/* =================================== */
+/* Контейнер длч синей и зеленой кнопки */
 .bar {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   width: 800px;
   height: 60px;
-  
 }
-.top10 a, .find1 a {
-  color:white;
+/* Кнопки */
+.top10 a,
+.find1 a {
+  color: white;
 }
-.top10, .find1 {
-  font: 600 9px  Montserrat;
+.top10,
+.find1 {
+  font: 600 9px Montserrat;
   text-align: center;
   width: 70px;
   height: 18px;
   padding-top: 5px;
   margin-top: 20px;
-  background: #0E00B080;
+  background: #0e00b080;
 }
 .find1 {
-  background: #02FF4980;
+  background: #02ff4980;
 }
+
+/* ======================================== */
+/* Контейнер 2/3 экрана с изображениями исполнителей */
 .img_player {
   display: flex;
   flex-wrap: wrap;
@@ -512,15 +534,17 @@ left: 900px; */
   gap: 30px 40px;
   padding-bottom: 40px;
 }
-img~ p {
-  font:400 9px Montserrat;
+/* Формат надписей под изображениями */
+img ~ p {
+  font: 400 9px Montserrat;
   color: rgb(176, 232, 11);
   margin-bottom: -5px;
 }
-img~ p~ p {
-  font:400 7px Montserrat;
-  color: white; 
+img ~ p ~ p {
+  font: 400 7px Montserrat;
+  color: white;
 }
+/* Разделительная полов=са к нижней трети экрана */
 hr {
   width: 770px;
   border: none;
@@ -528,9 +552,12 @@ hr {
   background-color: hsla(0, 0%, 0%, 0.308);
   margin-left: 0;
 }
+/* ======================================== */
+/* Котейнер для кнопок управления и нижнего ползунка */
 .control {
   display: flex;
 }
+/* меню, антенна, настройка контейнер */
 .menu_down {
   margin-left: 40px;
   padding-bottom: -20px;
@@ -539,4 +566,133 @@ hr {
   padding-right: 15px;
   margin-bottom: -15px;
 }
+/* Кнопки паузы и перемотки */
+.circle_back, .circle_forward, .circle_pause  {
+  margin-left: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid #2e3339;
+  border-color: linear-gradient(136.4deg, #2e3339 16.15%, #55585e 84.53%);
+  box-shadow: -6px -6px 15px 0px rgba(255, 255, 255, 0.05);
+  background: linear-gradient(
+    137.37deg,
+    #4e5256 15.6%,
+    rgba(19, 23, 27, 0) 82.94%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.circle_back {
+  margin-left: 50px;
+}
 
+.circle_pause {
+  border: 2px solid #c6230f;
+  background: linear-gradient(137.37deg, #d22d03 15.6%, #f6541d 82.94%);
+  border-image: linear-gradient(136.4deg, #e4542a 16.15%, #c6230f 84.53%);
+  box-shadow: -4px -4px 15px 0px rgba(255, 255, 255, 0.06);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  border-image-slice: 0;
+}
+/* Положения значков на кнопках */
+.position {
+  display: flex;
+  gap: 0;
+  margin-left: 19px;
+  padding-top: 5px;
+}
+.position_pause {
+  margin-left: 22px;
+
+  /* ================================== */
+  /* Контейнер ползунков */
+}
+.line_control_down {
+  display: flex;
+  position: relative;
+}
+/* ползунки */
+.right_d {
+  position: relative;
+  left: 40px;
+  top: 27px;
+  width: 40px;
+  padding-right: 10px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 6px rgba(177, 177, 177, 0.534),
+    -2px -2px 6px rgba(0, 0, 0, 0.459);
+}
+.left_d {
+  position: relative;
+  left: 40px;
+  top: 27px;
+  width: 250px;
+  height: 4px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #04d425 28.48%, #471cf3 98.17%);
+  box-shadow: 2px 2px 6px rgba(177, 177, 177, 0.534),
+    -2px -2px 6px rgba(0, 0, 0, 0.459);
+}
+.circle_black_d {
+  position: relative;
+  left: -18px;
+  top: 17px;
+  width: 24px;
+  height: 24px;
+  background-color: #413838;
+  border-radius: 50%;
+  box-shadow: -2px -2px 6px rgba(153, 152, 152, 0.514),
+    2px 2px 6px rgba(0, 0, 0, 0.137);
+}
+.circle_blue {
+  position: relative;
+  right: 37px;
+  top: 23px;
+  width: 12px;
+  height: 10px;
+  background: rgba(63, 50, 219, 1);
+  border-radius: 50%;
+}
+/* ============================================ */
+/* Секция 5 */
+/* Контейнер для блоков текста  */
+.text_1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+  margin-left: 300px;
+  margin-top: 90px;
+  line-height: 2rem;
+}
+/* Блок 1 */
+.upper_line {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+/* Контейнер блока2 */
+.mp_container {
+  width: 140px;
+  height: 100px;
+  margin-left: 120px;
+}
+/* Блок 2 */
+.MP_down {
+  font-family: "Kenia";
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 1em;
+  color: #ffffff;
+}
+/* Контейнер блока 3 */
+.bottom_page {
+  display: flex;
+  margin-top: -15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 120px;
+  margin-right: 120px;
+
+}
